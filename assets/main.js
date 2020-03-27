@@ -9,6 +9,12 @@ var LOCALE = {
   'skills': {
     'pt': 'habilidades'
   },
+  'stack': {
+    'pt': 'minha stack é'
+  },
+  'stack-also': {
+    'pt': 'mas eu também faço'
+  },
   'works': {
     'pt': 'trabalhos'
   },
