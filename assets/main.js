@@ -41,9 +41,6 @@ var LOCALE = {
   'exp-sjc': {
     'pt': 'São José dos Campos, Brasil'
   },
-  'networks': {
-    'pt': 'redes'
-  },
   'thanks': {
     'pt': 'obrigado pela leitura!'
   }

@@ -4,54 +4,21 @@
 
 body {
   background-color: #F0F0F0;
+  color: #000000;
   font: 16px 'Open Sans', sans-serif;
   margin: 0 20px;
-}
-
-h1 {
-  color: darkkhaki;
 }
 
 section, footer {
   margin: 50px auto;
   max-width: 1200px;
 }
+
 hr {
   margin: 0 auto;
   max-width: 1200px;
 }
 
-section.intro .holder {
-  overflow: hidden;
-}
-section.intro .photo img {
-  display: block;
-  margin: 1em auto 0;
-  max-width: 100%;
-}
-
-section.experiences h3 small {
-  font-size: 0.8em;
-  font-style: italic;
-  font-weight: normal;
-  padding-left: 10px;
-}
-
-@media (min-width: 600px) {
-  section.intro .photo {
-    float: left;
-    width: 20%;
-  }
-  section.intro .photo img {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  section.intro .info {
-    float: left;
-    padding-left: 20px;
-    width: 80%;
-  }
-}
 
 .language_holder {
   line-height: 0;
@@ -76,4 +43,86 @@ section.experiences h3 small {
 
 .language_holder button:focus {
   outline: none;
+}
+
+section.intro .title {
+  text-align: center;
+}
+
+section.intro .title:after {
+  clear: both;
+  content: '';
+  display: block
+}
+
+section.intro .title h1 {
+  color: darkkhaki;
+  line-height: 30px;
+  margin: 0;
+  padding: 12.5px 0;
+}
+
+section.intro .title .social {
+  font-size: 0;
+}
+
+section.intro .title .social a {
+  color: #000000;
+  display: inline-block;
+  margin: 10px 5px;
+  transition: 200ms;
+}
+
+section.intro .title .social a:hover {
+  color: darkkhaki;
+}
+
+section.intro .title .social svg {
+  display: block;
+  fill: currentColor;
+  height: 35px;
+  width: 35px;
+}
+
+section.intro .holder {
+  overflow: hidden;
+}
+section.intro .photo img {
+  display: block;
+  margin: 1em auto 0;
+  max-width: 100%;
+}
+
+section.experiences h3 small {
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: normal;
+  padding-left: 10px;
+}
+
+@media (min-width: 600px) {
+  section.intro .title {
+    text-align: left;
+  }
+
+  section.intro .title h1 {
+    float: left;
+    padding-right: 10px;
+  }
+
+  section.intro .photo {
+    float: left;
+    width: 20%;
+  }
+
+  section.intro .photo img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  section.intro .info {
+    float: left;
+    padding-left: 20px;
+    width: 80%;
+  }
 }
