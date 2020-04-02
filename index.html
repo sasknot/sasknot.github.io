@@ -11,7 +11,7 @@
 	<meta property="og:title" content="@sasknot" />
 	<meta property="og:description" content="Rafael Silva's (@sasknot) Profile and Portfolio" />
 	<meta property="og:type" content="website" />
-	<meta property="og:image" content="http://sasknot.github.io/photo.jpg" />
+	<meta property="og:image" content="http://sasknot.github.io/assets/photo.jpg" />
 	<meta property="og:image:type" content="image/jpg" />
 	<meta property="og:image:width" content="150" />
 	<meta property="og:image:height" content="171" />
@@ -20,85 +20,49 @@
 
 	<title>@sasknot</title>
 
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="assets/main.css">
 
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
-  <script>
-    var LOCALE = {
-      'en': {},
-      'pt': {
-        'position': 'Desenvolvedor',
-        'description': 'Sou uma pessoa que gosta de desafios. Estou preparado para aprender algo novo todos os dias, e gosto de aplicar este conhecimento que ganhei em tudo que preciso resolver. Eu trabalho com programação todos os dias, fazendo tudo que tenha a ver com web, e, tenho que admitir, não tem nada mais gratificante do que ver as pessoas envolvidas apreciando as coisas que você faz.',
-        'skills': 'habilidades',
-        'works': 'trabalhos',
-        'expTitle': 'experiências',
-        'expCrane': 'Agência digital. Desenvolvi ainda mais meu conhecimento sobre task runners e frameworks MVC Front End. Fazia webapps, hotsites e manutenção em revistas online mensais.',
-        'expSpume': 'App Mobile para notícias e Analytics de BigData. Meu trabalho era desenvolvedor ferramentas para análise e relatórios de BigData relacionada às notícias que o algoritmo principal juntava.',
-        'expMove': 'Agência digital. Aprendi a usar frameworks MVC Front End. Customizei o CMS que já existia para a necessidade de cada cliente.',
-        'expMoneto': 'App Mobile e Web para processar pagamentos. Nós tínhamos um time para desenvolver o site principal, app web, app mobile e gateway para processar pagamentos. Inicialmente eu desenvolvia somente o site, mas acabei me envolvendo com todas as partes do produto por necessidade. Mais tarde, a empresa foi renomeada para "Moneto".',
-        'expPhocus': 'Agência digital. Aprendi a usar task runners quando eles começaram a se popularizar. Nós desenvolvemos uma ferramenta para composição de uma homepage com widgets customizados (parecido com o Visual Composer do WordPress).',
-        'sp': 'São Paulo, Brasil',
-        'sjc': 'São José dos Campos, Brasil',
-        'networks': 'redes',
-        'thanks': 'obrigado pela leitura!'
-      }
-    };
-
-    function language() {
-      return {
-        TEXT: {},
-
-        change: function(code) {
-          this.TEXT = LOCALE[code]
-        },
-
-        init: function() {
-          // Gets english language inserted in html
-          Object.keys(LOCALE['pt']).forEach((function(key) {
-            if (this.$refs[key]) {
-              LOCALE['en'][key] = this.$refs[key].innerText;
-            }
-          }).bind(this));
-
-          // Defaults to english
-          this.TEXT = LOCALE['en']
-        }
-      }
-    }
-  </script>
+  <script src="assets/main.js" defer></script>
 </head>
-<body x-data="language()" x-init="init()">
-  <div class="language-holder">
-    <button x-on:click="change('pt')">PT</button>
-    <button x-on:click="change('en')">EN</button>
+<body>
+  <div class="language_holder">
+    <button>PT</button>
+    <button>EN</button>
   </div>
 
   <section class="intro">
     <h1>Rafael Francisco Shiroma da Silva</h1>
-    <p x-ref="position" x-text="TEXT.position">Software Developer</p>
+    <p x-ref="position">Software Developer</p>
     <div class="holder">
       <div class="photo">
-        <img src="photo.jpg" alt="Rafael">
+        <img src="assets/photo.jpg" alt="Rafael">
       </div>
       <div class="info">
-        <p x-ref="description" x-text="TEXT.description">
+        <p x-ref="description">
           I'm a person who likes challenges. I'm prepared to learn something everyday, and I like to apply this knownledge I've gained in everything I need to resolve. I work with programming everyday, making whatever comes related to web, and, I must admit, there's is nothing more rewarding than seeing the involved people enjoying the things you make.
         </p>
 
-        <h3 x-ref="skills" x-text="TEXT.skills">skills</h3>
+        <h3 x-ref="skills">skills</h3>
         <p>
           mobile first, <strong>responsive web design</strong>, mvc pattern, scrum, kanban
         </p>
+
+        <h3 x-ref="stack">currently my stack is</h3>
         <p>
-          html, css, <strong>javascript</strong>, php, mysql, postgresql, ruby, sass, less
+          webpack, sass, vuejs, expressjs, sqlite
+        </p>
+
+        <h3 x-ref="stack-also">but I also do</h3>
+        <p>
+          html, css, javascript, sql, php, ruby
         </p>
         <p>
-          nodejs, expressjs, ampersandjs, angularjs, reactjs, vuejs, <strong>jquery</strong>, bootstrap, foundation, cakephp, sinatra
+          angularjs, jquery, bootstrap, foundation, nodejs, expressjs, mysql, postgresql, cakephp, sinatra
         </p>
         <p>
-          <strong>sublime text</strong>, gulp, bower, npm, git, vagrant, docker, photoshop, sketch, zeplin, spotify, trello
+          sublime text, gulp, bower, npm, git, vagrant, docker, photoshop, sketch, zeplin, spotify, trello
         </p>
       </div>
     </div>
@@ -107,7 +71,7 @@
   <hr>
 
   <section class="works">
-    <h2 x-ref="works" x-text="TEXT.works">works</h2>
+    <h2 x-ref="works">works</h2>
     <ul>
       <li>
         <h3>Instituto de Oncologia do Vale (<a href="http://iov.com.br" target="_blank">iov.com.br</a>)</h3>
@@ -131,35 +95,35 @@
   <hr>
 
   <section class="experiences">
-    <h2 x-ref="expTitle" x-text="TEXT.expTitle">experiences</h2>
+    <h2 x-ref="exp-title">experiences</h2>
     <ul>
       <li>
-        <h3>Crane (<a href="http://crane.is" target="_blank">crane.is</a>) <small x-ref="sp" x-text="TEXT.sp">Sao Paulo, Brazil</small></h3>
-        <p x-ref="expCrane" x-text="TEXT.expCrane">
+        <h3>Crane (<a href="http://crane.is" target="_blank">crane.is</a>) <small x-ref="exp-sp">Sao Paulo, Brazil</small></h3>
+        <p x-ref="exp-crane">
           Digital agency. Improved even more my knowledge about task runners and front end frameworks. I did webapps, hotsites and maintenances in monthly online magazines.
         </p>
       </li>
       <li>
-        <h3>Spumenews (<a href="http://spume.co" target="_blank">spume.co</a>) <small x-text="TEXT.sp">Sao Paulo, Brazil</small></h3>
-        <p x-ref="expSpume" x-text="TEXT.expSpume">
+        <h3>Spumenews (<a href="http://spume.co" target="_blank">spume.co</a>) <small x-ref="exp-sp">Sao Paulo, Brazil</small></h3>
+        <p x-ref="exp-spume">
           Mobile App for news and data analytics. My job was to develop tools that analyzes a big volume of data from the most accessed sites and social networks so it was possible to generate reports with trending topics.
         </p>
       </li>
       <li>
-        <h3>Move Digital (<a href="http://movedigital.com.br" target="_blank">movedigital.com.br</a>) <small x-ref="sjc" x-text="TEXT.sjc">Sao Jose dos Campos, Brazil</small></h3>
-        <p x-ref="expMove" x-text="TEXT.expMove">
+        <h3>Move Digital (<a href="http://movedigital.com.br" target="_blank">movedigital.com.br</a>) <small x-ref="exp-sjc">Sao Jose dos Campos, Brazil</small></h3>
+        <p x-ref="exp-move">
           Digital agency. I learnt how to use front end frameworks. I customized the CMS that already existed for the needs of each project.
         </p>
       </li>
       <li>
-        <h3>ContaPaga/Moneto (<a href="http://moneto.com.br" target="_blank">moneto.com.br</a>) <small x-text="TEXT.sjc">Sao Jose dos Campos, Brazil</small></h3>
-        <p x-ref="expMoneto" x-text="TEXT.expMoneto">
+        <h3>ContaPaga/Moneto (<a href="http://moneto.com.br" target="_blank">moneto.com.br</a>) <small x-ref="exp-sjc">Sao Jose dos Campos, Brazil</small></h3>
+        <p x-ref="exp-moneto">
           Mobile App for processing payments. We had a team to develop the main site, web app, mobile app and gateway for processing payments. Initially I developed only the site, but then I got involved with all the parts of the product for necessity. Later, the company was renamed to "Moneto".
         </p>
       </li>
       <li>
-        <h3>Phocus Interact (<a href="http://phocus.com.br" target="_blank">phocus.com.br</a>) <small x-text="TEXT.sjc">Sao Jose dos Campos, Brazil</small></h3>
-        <p x-ref="expPhocus" x-text="TEXT.expPhocus">
+        <h3>Phocus Interact (<a href="http://phocus.com.br" target="_blank">phocus.com.br</a>) <small x-ref="sjc">Sao Jose dos Campos, Brazil</small></h3>
+        <p x-ref="exp-phocus">
           Digital agency. I learnt how to use task runners when they became popular. We developed a tool to compose a homepage with custom widgets (similar to WordPress Visual Composer).
         </p>
       </li>
@@ -169,10 +133,11 @@
   <hr>
 
   <section class="networks">
-    <h2 x-ref="networks" x-text="TEXT.networks">networks</h2>
+    <h2 x-ref="networks">networks</h2>
     <ul>
       <li><a href="https://br.linkedin.com/in/rafaelfsilva1">linkedin</a></li>
       <li><a href="http://github.com/sasknot">github</a></li>
+      <li><a href="https://bitbucket.org/rafaelfsilva1/">bitbucket</a></li>
       <li><a href="http://fb.com/sasknot">facebook</a></li>
       <li><a href="http://twitter.com/sasknot">twitter</a></li>
       <li><a href="http://filmow.com/usuario/sasknot">filmow</a></li>
@@ -183,7 +148,7 @@
   <hr>
 
   <footer>
-    <p x-ref="thanks" x-text="TEXT.thanks">thank you for reading!</p>
+    <p x-ref="thanks">thank you for reading!</p>
   </footer>
 </body>
 </html>

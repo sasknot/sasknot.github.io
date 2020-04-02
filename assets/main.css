@@ -53,7 +53,7 @@ section.experiences h3 small {
   }
 }
 
-.language-holder {
+.language_holder {
   line-height: 0;
   padding: 10px;
   position: fixed;
@@ -61,7 +61,7 @@ section.experiences h3 small {
   top: 0;
 }
 
-.language-holder button {
+.language_holder button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -74,6 +74,6 @@ section.experiences h3 small {
   padding: 5px;
 }
 
-.language-holder button:focus {
+.language_holder button:focus {
   outline: none;
 }
