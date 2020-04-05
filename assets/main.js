@@ -1,24 +1,35 @@
 var LOCALE = {
+  'name': {
+    'pt': 'Rafael Francisco Shiroma da Silva',
+    'jp': '城間ダシルバ ラファエル'
+  },
   'position': {
-    'pt': 'Desenvolvedor de Software'
+    'pt': 'Desenvolvedor de Software',
+    'jp': 'ソフトウェアデベロッパー'
   },
   'description': {
-    'pt': 'Sou uma pessoa que gosta de desafios. Estou preparado para aprender algo novo todos os dias, e gosto de aplicar este conhecimento que ganhei em tudo que preciso resolver. Eu trabalho com programação todos os dias, fazendo tudo que tenha a ver com web, e, tenho que admitir, não tem nada mais gratificante do que ver as pessoas envolvidas apreciando as coisas que você faz.'
+    'pt': 'Sou uma pessoa que gosta de desafios. Estou preparado para aprender algo novo todos os dias, e gosto de aplicar este conhecimento que ganhei em tudo que preciso resolver. Eu trabalho com programação todos os dias, fazendo tudo que tenha a ver com web, e, tenho que admitir, não tem nada mais gratificante do que ver as pessoas envolvidas apreciando as coisas que você faz.',
+    'jp': '私は挑戦が好きな人です。 私は毎日何かを学ぶ準備ができており、解決する必要があるすべてのもので得たこの知識を適用したいと思っています。 私は毎日プログラミングに取り組み、Webに関連するものは何でも作ります。そして、認めなければならないのは、関係する人々が自分の作品を楽しんでいるのを見ることほどやりがいがあります。',
   },
   'skills': {
-    'pt': 'habilidades'
+    'pt': 'habilidades',
+    'jp': 'スキル'
   },
   'stack': {
-    'pt': 'minha stack é'
+    'pt': 'minha stack é',
+    'jp': 'スタックは'
   },
   'stack-also': {
-    'pt': 'mas eu também faço'
+    'pt': 'mas eu também faço',
+    'jp': '私もこれをします'
   },
   'works': {
-    'pt': 'trabalhos'
+    'pt': 'trabalhos',
+    'jp': '作品'
   },
   'thanks': {
-    'pt': 'obrigado pela leitura!'
+    'pt': 'obrigado pela leitura!',
+    'jp': '読んでくれてありがとうございました！'
   }
 };
 
