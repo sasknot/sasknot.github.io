@@ -17,30 +17,6 @@ var LOCALE = {
   'works': {
     'pt': 'trabalhos'
   },
-  'exp-title': {
-    'pt': 'experiências'
-  },
-  'exp-crane': {
-    'pt': 'Agência digital. Desenvolvi ainda mais meu conhecimento sobre task runners e frameworks MVC Front End. Fazia webapps, hotsites e manutenção em revistas online mensais.'
-  },
-  'exp-spume': {
-    'pt': 'App Mobile para notícias e Analytics de BigData. Meu trabalho era desenvolvedor ferramentas para análise e relatórios de BigData relacionada às notícias que o algoritmo principal juntava.'
-  },
-  'exp-move': {
-    'pt': 'Agência digital. Aprendi a usar frameworks MVC Front End. Customizei o CMS que já existia para a necessidade de cada cliente.'
-  },
-  'exp-moneto': {
-    'pt': 'App Mobile e Web para processar pagamentos. Nós tínhamos um time para desenvolver o site principal, app web, app mobile e gateway para processar pagamentos. Inicialmente eu desenvolvia somente o site, mas acabei me envolvendo com todas as partes do produto por necessidade. Mais tarde, a empresa foi renomeada para "Moneto".'
-  },
-  'exp-phocus': {
-    'pt': 'Agência digital. Aprendi a usar task runners quando eles começaram a se popularizar. Nós desenvolvemos uma ferramenta para composição de uma homepage com widgets customizados (parecido com o Visual Composer do WordPress).'
-  },
-  'exp-sp': {
-    'pt': 'São Paulo, Brasil'
-  },
-  'exp-sjc': {
-    'pt': 'São José dos Campos, Brasil'
-  },
   'thanks': {
     'pt': 'obrigado pela leitura!'
   }
