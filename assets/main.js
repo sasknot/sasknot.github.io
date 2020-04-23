@@ -33,7 +33,7 @@ var LOCALE = {
   }
 };
 
-var LANGUAGE_DEFAULT = 'en'
+var LANGUAGE_DEFAULT = 'en';
 var $refs = {};
 
 Object.keys(LOCALE).forEach(function(refId) {

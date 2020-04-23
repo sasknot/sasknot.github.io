@@ -31,7 +31,8 @@ button {
   border: none;
 }
 
-section, footer {
+section,
+footer {
   margin: 50px auto;
   max-width: 1200px;
 }
@@ -51,10 +52,6 @@ hr {
 }
 
 .language_holder button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
   transition: 200ms;
   background: #FFFFFF;
   font-size: 16px;
@@ -72,10 +69,10 @@ section.intro .title {
   text-align: center;
 }
 
-section.intro .title:after {
+section.intro .title::after {
   clear: both;
   content: '';
-  display: block
+  display: block;
 }
 
 section.intro .title h1 {
