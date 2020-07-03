@@ -27,6 +27,18 @@ var LOCALE = {
     'pt': 'trabalhos',
     'jp': '作品'
   },
+  'projects': {
+    'pt': 'projetos',
+    'jp': 'プロジェクト'
+  },
+  'projects-sg': {
+    'pt': 'uma rede social para gamers (em desenvolvimento)',
+    'jp': 'ゲーマーへのソーシャルネットワーク（制作中）。'
+  },
+  'projects-gc': {
+    'pt': 'um plugin muito antigo para colocar elementos em um grid',
+    'jp': '要素をグリッドに配置するためのとても古いjQueryプラグイン。'
+  },
   'thanks': {
     'pt': 'obrigado pela leitura!',
     'jp': '読んでくれてありがとうございました！'
