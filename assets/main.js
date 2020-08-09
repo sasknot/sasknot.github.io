@@ -31,6 +31,10 @@ var LOCALE = {
     'pt': 'projetos',
     'jp': 'プロジェクト'
   },
+  'projects-nlw2': {
+    'pt': '"Proffy" é um meio para conectar professores a alunos. Está separada em 3 apps: api, web e mobile.',
+    'jp': '「プロフィー」は、教師と生徒をつなぐ方法です。 3つのアプリに分かれています： api、web、モバイル。'
+  },
   'projects-sg': {
     'pt': 'uma rede social para gamers (em desenvolvimento)',
     'jp': 'ゲーマーへのソーシャルネットワーク（制作中）。'
