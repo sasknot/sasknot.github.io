@@ -40,7 +40,7 @@ var LOCALE = {
     'jp': 'ゲーマーへのソーシャルネットワーク（制作中）。'
   },
   'projects-gc': {
-    'pt': 'um plugin muito antigo para colocar elementos em um grid',
+    'pt': 'um plugin jQuery muito antigo para colocar elementos em um grid',
     'jp': '要素をグリッドに配置するためのとても古いjQueryプラグイン。'
   },
   'thanks': {
