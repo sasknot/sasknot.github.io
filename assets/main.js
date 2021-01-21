@@ -9,7 +9,7 @@ var LOCALE = {
   },
   'description': {
     'pt': 'Sou uma pessoa que gosta de desafios. Estou preparado para aprender algo novo todos os dias, e gosto de aplicar este conhecimento que ganhei em tudo que preciso resolver. Eu trabalho com programação todos os dias, fazendo tudo que tenha a ver com web, e, tenho que admitir, não tem nada mais gratificante do que ver as pessoas envolvidas apreciando as coisas que você faz.',
-    'jp': '私は挑戦が好きな人です。 私は毎日何かを学ぶ準備ができており、解決する必要があるすべてのもので得たこの知識を適用したいと思っています。 私は毎日プログラミングに取り組み、Webに関連するものは何でも作ります。そして、認めなければならないのは、関係する人々が自分の作品を楽しんでいるのを見ることほどやりがいがあります。',
+    'jp': '私は挑戦が好きな人です。 毎日何かを学ぶ準備ができており、解決する必要があるすべてのもので得たこの知識を適用したいと思っています。 毎日プログラミングに取り組み、Webに関連するものは何でも作ります。そして、認めなければならないのは、関係する人々が自分の作品を楽しんでいるのを見ることほどやりがいがあります。',
   },
   'skills': {
     'pt': 'habilidades',
@@ -21,7 +21,7 @@ var LOCALE = {
   },
   'stack-also': {
     'pt': 'mas eu também faço',
-    'jp': '私もこれをします'
+    'jp': 'でもこれもできる'
   },
   'works': {
     'pt': 'trabalhos',
@@ -30,6 +30,10 @@ var LOCALE = {
   'projects': {
     'pt': 'projetos',
     'jp': 'プロジェクト'
+  },
+  'projects-nlw': {
+    'pt': '"Happy" é um meio para conectar orfanatos e quem os quer visitar. Está separada em 3 apss: api, web e mobile.',
+    'jp': '「ハッピー」は、見に行きたい方と孤児院をつなぐ方法です。 3つのアプリに分かれています： api、web、モバイル。'
   },
   'projects-nlw2': {
     'pt': '"Proffy" é um meio para conectar professores a alunos. Está separada em 3 apps: api, web e mobile.',
