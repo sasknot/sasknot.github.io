@@ -31,7 +31,7 @@ var LOCALE = {
     'pt': 'projetos',
     'jp': 'プロジェクト'
   },
-  'projects-nlw': {
+  'projects-nlw3': {
     'pt': '"Happy" é um meio para conectar orfanatos e quem os quer visitar. Está separada em 3 apss: api, web e mobile.',
     'jp': '「ハッピー」は、見に行きたい方と孤児院をつなぐ方法です。 3つのアプリに分かれています： api、web、モバイル。'
   },
