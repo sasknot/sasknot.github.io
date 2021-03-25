@@ -106,11 +106,6 @@ section.intro .title .social svg {
 section.intro .holder {
   overflow: hidden;
 }
-section.intro .photo img {
-  display: block;
-  margin: 1em auto 0;
-  max-width: 100%;
-}
 
 @media (min-width: 600px) {
   section.intro .title {
@@ -120,21 +115,5 @@ section.intro .photo img {
   section.intro .title h1 {
     float: left;
     padding-right: 10px;
-  }
-
-  section.intro .photo {
-    float: left;
-    width: 20%;
-  }
-
-  section.intro .photo img {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  section.intro .info {
-    float: left;
-    padding-left: 20px;
-    width: 80%;
   }
 }

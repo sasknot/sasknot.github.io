@@ -7,14 +7,6 @@ var LOCALE = {
     'pt': 'Desenvolvedor de Software',
     'jp': 'ソフトウェアデベロッパー'
   },
-  'description': {
-    'pt': 'Sou uma pessoa que gosta de desafios. Estou preparado para aprender algo novo todos os dias, e gosto de aplicar este conhecimento que ganhei em tudo que preciso resolver. Eu trabalho com programação todos os dias, fazendo tudo que tenha a ver com web, e, tenho que admitir, não tem nada mais gratificante do que ver as pessoas envolvidas apreciando as coisas que você faz.',
-    'jp': '私は挑戦が好きな人です。 毎日何かを学ぶ準備ができており、解決する必要があるすべてのもので得たこの知識を適用したいと思っています。 毎日プログラミングに取り組み、Webに関連するものは何でも作ります。そして、認めなければならないのは、関係する人々が自分の作品を楽しんでいるのを見ることほどやりがいがあります。',
-  },
-  'skills': {
-    'pt': 'habilidades',
-    'jp': 'スキル'
-  },
   'stack': {
     'pt': 'minha stack é',
     'jp': 'スタックは'
@@ -30,6 +22,10 @@ var LOCALE = {
   'projects': {
     'pt': 'projetos',
     'jp': 'プロジェクト'
+  },
+  'projects-nlw4': {
+    'pt': 'complete desafios de exercícios físicos e se motive com suas vitórias.',
+    'jp': '運動の挑戦を完了して優勝すると気合を入れます。'
   },
   'projects-nlw3': {
     'pt': '"Happy" é um meio para conectar orfanatos e quem os quer visitar. Está separada em 3 apss: api, web e mobile.',
