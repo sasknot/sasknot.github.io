@@ -1,59 +1,59 @@
 var LOCALE = {
   'name': {
-    'pt': 'Rafael Francisco Shiroma da Silva',
-    'jp': '城間ダシルバ ラファエル'
+    'pt-BR': 'Rafael Francisco Shiroma da Silva',
+    'ja-JP': '城間ダシルバ ラファエル'
   },
   'position': {
-    'pt': 'Desenvolvedor de Software',
-    'jp': 'ソフトウェアデベロッパー'
+    'pt-BR': 'Desenvolvedor de Software',
+    'ja-JP': 'ソフトウェア開発者'
   },
   'stack': {
-    'pt': 'minha stack é',
-    'jp': 'スタックは'
-  },
-  'stack-also': {
-    'pt': 'mas eu também faço',
-    'jp': 'でもこれもできる'
-  },
-  'works': {
-    'pt': 'trabalhos',
-    'jp': '作品'
+    'pt-BR': 'stack atual é',
+    'ja-JP': 'スタックは'
   },
   'projects': {
-    'pt': 'projetos',
-    'jp': 'プロジェクト'
+    'pt-BR': 'projetos',
+    'ja-JP': 'プロジェクト'
   },
-  'projects-nlw4': {
-    'pt': 'complete desafios de exercícios físicos e se motive com suas vitórias.',
-    'jp': '運動の挑戦を完了して優勝すると気合を入れます。'
+  'projects-repo': {
+    'pt-BR': 'Repositório Git',
+    'ja-JP': 'gitリポジトリ'
   },
-  'projects-nlw3': {
-    'pt': '"Happy" é um meio para conectar orfanatos e quem os quer visitar. Está separada em 3 apss: api, web e mobile.',
-    'jp': '「ハッピー」は、見に行きたい方と孤児院をつなぐ方法です。 3つのアプリに分かれています： api、web、モバイル。'
+  'projects-demo': {
+    'pt-BR': 'Demonstração',
+    'ja-JP': 'ライブデモ'
   },
-  'projects-nlw2': {
-    'pt': '"Proffy" é um meio para conectar professores a alunos. Está separada em 3 apps: api, web e mobile.',
-    'jp': '「プロフィー」は、教師と生徒をつなぐ方法です。 3つのアプリに分かれています： api、web、モバイル。'
+  'projects-moveit': {
+    'pt-BR': 'complete desafios de exercícios físicos e se motive com suas vitórias.',
+    'ja-JP': '運動の挑戦を完了して優勝すると気合を入れます。'
+  },
+  'projects-happy': {
+    'pt-BR': '"Happy" é um meio para conectar orfanatos e quem os quer visitar. Está separada em 3 apss: api, web e mobile.',
+    'ja-JP': '「ハッピー」は、見に行きたい方と孤児院をつなぐ方法です。 3つのアプリに分かれています： api、web、モバイル。'
+  },
+  'projects-proffy': {
+    'pt-BR': '"Proffy" é um meio para conectar professores a alunos. Está separada em 3 apps: api, web e mobile.',
+    'ja-JP': '「プロフィー」は、教師と生徒をつなぐ方法です。 3つのアプリに分かれています： api、web、モバイル。'
   },
   'projects-sg': {
-    'pt': 'uma rede social para gamers (em desenvolvimento)',
-    'jp': 'ゲーマーへのソーシャルネットワーク（制作中）。'
+    'pt-BR': 'uma rede social para gamers (em desenvolvimento)',
+    'ja-JP': 'ゲーマーへのソーシャルネットワーク（制作中）。'
   },
   'projects-gc': {
-    'pt': 'um plugin jQuery muito antigo para colocar elementos em um grid',
-    'jp': '要素をグリッドに配置するためのとても古いjQueryプラグイン。'
+    'pt-BR': 'um plugin jQuery muito antigo para colocar elementos em um grid',
+    'ja-JP': '要素をグリッドに配置するためのとても古いjQueryプラグイン。'
   },
   'thanks': {
-    'pt': 'obrigado pela leitura!',
-    'jp': '読んでくれてありがとうございました！'
+    'pt-BR': 'obrigado pela leitura!',
+    'ja-JP': '読んでくれてありがとうございました！'
   }
 };
 
-var LANGUAGE_DEFAULT = 'en';
-var $refs = {};
+const LANGUAGE_DEFAULT = 'en-US';
+const $refs = {};
 
-Object.keys(LOCALE).forEach(function(refId) {
-  var nodeList = document.querySelectorAll('[x-ref="' + refId + '"]');
+Object.keys(LOCALE).forEach(function (refId) {
+  const nodeList = document.querySelectorAll('[x-ref="' + refId + '"]');
 
   if (nodeList.length) {
     // Stores the strings of default language in LOCALE
@@ -61,24 +61,25 @@ Object.keys(LOCALE).forEach(function(refId) {
 
     // Stores node references and removes x-ref attribute
     $refs[refId] = [];
-    nodeList.forEach(function(current) {
+    nodeList.forEach(function (current) {
       $refs[refId].push(current);
       current.removeAttribute('x-ref');
     });
   }
 });
 
-document.querySelectorAll('.language_holder button').forEach(function(button) {
-  button.addEventListener('click', function() {
-    var language = this.innerHTML.toLowerCase();
+document.querySelectorAll('.language_holder button').forEach(function (button) {
+  button.addEventListener('click', function () {
+    const language = this.dataset.lang;
+    document.querySelector('html').lang = language
 
     // Iterate over references ids of LOCALE
-    Object.keys(LOCALE).forEach(function(refId) {
-      var nodeList = $refs[refId];
+    Object.keys(LOCALE).forEach(function (refId) {
+      const nodeList = $refs[refId];
 
       // Iterates over references if it exists
       if (nodeList) {
-        nodeList.forEach(function(current) {
+        nodeList.forEach(function (current) {
           current.innerHTML = LOCALE[refId][language];
         });
       }
