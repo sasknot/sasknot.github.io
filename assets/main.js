@@ -24,8 +24,8 @@ var LOCALE = {
     'ja': 'ライブデモ'
   },
   'projects-agenda': {
-    'pt': 'aprendendo conceitos e implementações de Vue3 + Vite + Tailwind',
-    'ja': 'Vue3 + Vite + Tailwindのコンセプトや実現を勉強しています'
+    'pt': 'aprendendo conceitos e implementações de Vue 3 + Vite + TailwindCSS',
+    'ja': 'Vue 3 + Vite + TailwindCSSのコンセプトや実現を勉強しています'
   },
   'projects-nlw': {
     'pt': 'Aprendendo ReactJS e React Native com a',
