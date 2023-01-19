@@ -3,10 +3,6 @@ var LOCALE = {
     'pt': 'Rafael Francisco Shiroma da Silva',
     'ja': '城間ダシルバ ラファエル'
   },
-  'position': {
-    'pt': 'Desenvolvedor de Software',
-    'ja': 'ソフトウェア開発者'
-  },
   'stack': {
     'pt': 'stack atual é',
     'ja': 'スタックは'
