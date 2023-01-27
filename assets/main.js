@@ -19,6 +19,14 @@ var LOCALE = {
     'pt': 'Demonstração',
     'ja': 'ライブデモ'
   },
+  'projects-openai': {
+    'pt': 'primeiro bootstrap com Vite + React, aprendendo API da OpenAI',
+    'ja': 'Vite+Reactでの最初のブートストラップ、OpenAI APIの学習'
+  },
+  'projects-tokoro': {
+    'pt': 'primeiro bootstrap com CRA, aprendendo integração com Mapbox',
+    'ja': 'CRAでの最初のブートストラップ、Mapboxの学習'
+  },
   'projects-agenda': {
     'pt': 'aprendendo conceitos e implementações de Vue 3 + Vite + TailwindCSS',
     'ja': 'Vue 3 + Vite + TailwindCSSのコンセプトや実現を勉強しています'
